@@ -33,9 +33,14 @@ cmake {
 path "src/main/c/CMakeLists.txt"
 version "3.10.2"
 }
-´
+´ 4. En MainApplication agregar llamdo a Librerias Nativas
 
-4. Compile Aplicación en Android y Acepte nuevos componentes.
+// Used to load the 'native-lib' library on application startup.
+static {
+System.loadLibrary("native-lib");
+}
+
+5. Compile Aplicación en Android y Acepte nuevos componentes.
 
 ## Contribute
 
